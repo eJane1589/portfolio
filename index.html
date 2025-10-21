@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; form-action https://formsubmit.co;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
   <title>Elaina Carney – Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -67,6 +72,21 @@
           <li>Performed construction and finishing tasks including trimming, flooring, and painting.</li>
           <li>Operated machinery and collaborated with team members for efficient project completion.</li>
         </ul>
+      </section>
+      <section class="card fade-in">
+        <div class="form">
+          <h1> Contact Me!</h1> 
+          <form action="https://formsubmit.co/elaina@elainacarney.com" method="Post">
+            <input type="text" maxlength="100" placeholder="Name" required>
+            <input type="email" placeholder="Email">
+            <input type="text" maxlength="100" placeholder="Subject" required>
+            <textarea name="msg" maxlength="1000" required placeholder="Message"></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://elainacarney.com">
+            <input type="hidden" name="_template" value="table">
+            <button type="Submit"</button>
+          </form>
+        </div>
       </section>
     </main>
 
