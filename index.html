@@ -3,49 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'none';">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <a href="https://github.com/ejane1589" target="_blank" rel="noopener noreferrer">ejane1589</a>
+  <meta name="description" content="Portfolio of Elaina Carney, backend developer and security architect.">
+  <meta name="author" content="Elaina Carney">
   <title>Elaina Carney | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <h1>Elaina Carney</h1>
-    <p>Backend Developer & Security Architect</p>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="hero">
+    <div class="container">
+      <h1>Elaina Carney</h1>
+      <p class="subtitle">Backend Developer & Security Architect</p>
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <div class="project">
-      <h3>Multi-App Flask System</h3>
-      <p>Collaborative backend with shared state and dynamic HTML updates.</p>
-    </div>
-    <div class="project">
-      <h3>Threat Modeling Toolkit</h3>
-      <p>Expressive diagrams and security annotations for software assurance.</p>
-    </div>
-  </section>
+  <main class="container">
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="card">
+        <h3>Multi-App Flask System</h3>
+        <p>Collaborative backend with shared state, dynamic HTML updates, and robust file handling.</p>
+      </div>
+      <div class="card">
+        <h3>Threat Modeling Toolkit</h3>
+        <p>Expressive diagrams and security annotations for software assurance and risk mitigation.</p>
+      </div>
+    </section>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>Flask, Python, HTML/CSS/JS</li>
-      <li>SQLite, MongoDB, Redis</li>
-      <li>Security Architecture & Threat Modeling</li>
-    </ul>
-  </section>
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul class="skills-list">
+        <li>Flask, Python, HTML/CSS/JS</li>
+        <li>SQLite, MongoDB, Redis</li>
+        <li>Security Architecture & Threat Modeling</li>
+        <li>Professional Communication & Academic Outreach</li>
+      </ul>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: elaina@example.com</p>
-    <p>GitHub: <a href="https://github.com/ejane1589">ejane1589</a></p>
-  </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:elaina@example.com">elaina@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/ejane1589" target="_blank">ejane1589</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Elaina Carney</p>
+    <div class="container">
+      <p>© 2025 Elaina Carney. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
