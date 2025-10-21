@@ -144,12 +144,18 @@ footer {
 .form textarea:focus {
   border-color: #1abc9c;
   outline: none;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
 }
 
 /* Textarea */
 .form textarea {
   resize: vertical;
   min-height: 120px;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
 }
 
 /* Submit Button */
